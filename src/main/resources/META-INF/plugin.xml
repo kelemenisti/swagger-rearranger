@@ -1,0 +1,27 @@
+<idea-plugin>
+    <id>org.kelemenistvan.swagger-rearranger</id>
+    <name>Swagger rearranger</name>
+    <vendor email="kelemenisty@gmail.com" url="https://github.com/kelemenisti/swagger-rearranger">Kelemen István</vendor>
+
+    <description>
+        Rearranges paths and schemas alphabetically in a swagger yaml file
+    </description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <group>
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+            <action id="Myplugin.Textboxes" class="RearrangeAction" text="Rearrange"
+                    description="Rearrange content alphabetically"/>
+        </group>
+    </actions>
+</idea-plugin>
